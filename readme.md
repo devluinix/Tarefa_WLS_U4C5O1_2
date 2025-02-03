@@ -8,12 +8,12 @@ Este projeto utiliza a placa BitDogLab com um microcontrolador RP2040 integrado 
 
 ## Funcionalidades
 
-- O LED vermelho acende e depois de 3s o amarelo acende e depois de 3s o verde acende
+- Ao pressionar o botão pino 5, todas as LEDS acendem, e de 3 em 3 segundos, vao apagando.
+- Tudo ligado > Led Azul Apaga, Vermelho Apaga, Verde Apaga
 
 ## Demonstração (VÍDEO)
 
-[Vídeo Demonstração](https://youtube.com/shorts/pPqVZA0dMvM)
-[Vídeo Explicação](https://youtube.com/shorts/hlZhHR4Ap8o)
+[Vídeo Demonstração](https://youtube.com/shorts/DUGcFvfNFmk)
 
 ## Como compilar e executar
 
@@ -32,4 +32,4 @@ Este projeto utiliza a placa BitDogLab com um microcontrolador RP2040 integrado 
 
 Equipe 2 - Grupo 3 - EmbarcaTech
 
-- [Luiz Marcelo](https://github.com/devluinix/Tarefa_WLS_U4C5O1)
+- [Luiz Marcelo](https://github.com/devluinix/Tarefa_WLS_U4C5O1_2)
