@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 20,
+      "left": 60,
+      "attrs": { "env": "arduino-community" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 37.6,
+      "left": -152.2,
+      "rotate": 270,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 133.6,
+      "left": -152.2,
+      "rotate": 270,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 85.6,
+      "left": -152.2,
+      "rotate": 270,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 147.95,
+      "left": -48,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 186.35,
+      "left": -48,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 167.15,
+      "left": -48,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -3.4,
+      "left": -48,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": -24.85,
+      "left": 38.4,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    ["pico:GND.1", "led1:C", "black", ["v15.25", "h-277.2"]],
+    ["$serialMonitor:RX", "pico:GP0", "", []],
+    ["led2:A", "r3:1", "gold", ["h38.4", "v76.8"]],
+    ["r2:2", "pico:GP13", "green", ["v0"]],
+    ["r3:2", "pico:GP12", "green", ["v0"]],
+    ["r1:2", "pico:GP11", "green", ["v0"]],
+    ["r2:1", "led3:A", "green", ["h-28.8", "v-38.4"]],
+    ["r1:1", "led1:A", "red", ["v0"]],
+    ["led2:C", "led1:C", "black", ["h19.2", "v-38.8"]],
+    ["led3:C", "led2:C", "black", ["h28.8", "v-57.6"]],
+    ["pico:3V3", "r4:2", "red", ["h40.8", "v-90.35"]],
+    ["btn1:1.r", "pico:GND.8", "black", ["v0", "h144.2", "v38.4"]],
+    ["r4:1", "pico:GP5", "red", ["v0"]],
+    ["btn1:2.r", "pico:GP5", "violet", ["h0.2", "v67.4"]]
+  ],
+  "dependencies": {}
+}
