@@ -1,4 +1,4 @@
-# Controle de Semaforo usando Timer
+# Controle de Luzes através de botão e timers
 
 ## Descrição
 
